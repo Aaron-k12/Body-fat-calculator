@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type BodyFatCategoryType = {
   description: string;
   female: string;
@@ -9,7 +10,7 @@ export interface FormType {
   height: number;
   weight: number;
   gender: string | number;
-};
+}
 
 export interface FormInputTypes {
   age: string;
@@ -19,13 +20,18 @@ export interface FormInputTypes {
 }
 
 export interface BodyDataType {
+  // bodyFatPercentageBmi: number;
+  // bodyFatCategory: number;
+  // idealBodyFat: number;
+  // bodyFatToLose: number;
+  // bodyFatMass: number;
+  // leanBodyMass: number;
+  // leanBodyMassPercentage: number;
   bodyFatPercentageBmi: number;
-  bodyFatCategory: number;
-  idealBodyFat: number;
-  bodyFatToLose: number;
-  bodyFatMass: number;
-  leanBodyMass: number;
+  bodyFatCategory: string;
+  idealBodyFat: any;
+  bodyFatToLose: string;
+  bodyFatMass: string;
+  leanBodyMass: string;
   leanBodyMassPercentage: number;
 }
-
-

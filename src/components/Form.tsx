@@ -1,11 +1,13 @@
 import React from "react";
 import { NumberInput, Select, Button } from "@mantine/core";
 import { useForm } from "@mantine/form";
-import { FormType } from "../Types/FormTypes";
 
 interface FormTypeProps {
   setShowResult: React.Dispatch<React.SetStateAction<boolean>>;
-  handleSubmit: (values: FormType) => void;
+  handleSubmit: (
+    values: { age: string; height: string; weight: string; gender: string },
+    event: React.FormEvent<HTMLFormElement>
+  ) => void;
   loading: boolean;
 }
 
