@@ -1,4 +1,3 @@
-import React from "react";
 import { TextInput, Button, PasswordInput } from "@mantine/core";
 
 const SignInForm = () => {

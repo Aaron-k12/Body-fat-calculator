@@ -1,7 +1,7 @@
 import { Text, Divider, Button } from "@mantine/core";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-const HomeForm = ({ signInModal }) => {
+const HomeForm = () => {
 
   const [isLoading, setIsLoading] = useState(false)
   return (
